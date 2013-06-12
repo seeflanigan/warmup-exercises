@@ -32,7 +32,7 @@ Atbash = function() {
   }
 
   this.separate = function(str) {
-    return str.match(/[a-z0-9]{5}|[\w\x]+/ig).join(" ")
+    return str.match(/[a-z|0-9]{5}|[\w]+/ig).join(" ")
   }
 
   return this;
